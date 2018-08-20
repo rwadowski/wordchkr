@@ -3,9 +3,9 @@ package com.morgenrete
 import java.io.File
 import java.text.DecimalFormat
 
-import com.morgenrete.search.engine.{Engine, Phrase, Test}
 import com.morgenrete.search.engine.calc.score.Score
 import com.morgenrete.search.engine.load.FileLoader
+import com.morgenrete.search.engine.{Engine, Phrase}
 
 import scala.annotation.tailrec
 import scala.io.StdIn

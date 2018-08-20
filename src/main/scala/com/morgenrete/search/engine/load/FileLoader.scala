@@ -34,7 +34,7 @@ class FileLoader(file: File) extends DataLoader {
   private def loadFile(file: File): Seq[String] = {
     require(file.isFile, "Can't open directory as file")
     val src = Source.fromFile(file, "UTF-8")
-    val lines = src.getLines().flatMap(_.split(" ")).toSeq
+    val lines = src.getLines().flatMap(_.split(" ")).toList
     src.close()
     lines
   }
